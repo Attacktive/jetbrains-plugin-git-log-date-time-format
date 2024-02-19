@@ -4,12 +4,19 @@
 version: 2
 updates:
   # Maintain dependencies for Gradle dependencies
-  - package-ecosystem: "gradle"
-    directory: "/"
+  - package-ecosystem: 'gradle'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
+      time: '00:00'
+    labels:
+      - 'CI/CD'
+
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
+      time: '00:00'
+    labels:
+      - 'CI/CD'
